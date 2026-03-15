@@ -1,0 +1,43 @@
+				B		N		F
+<digit>::= 0 | 1 | 2 | 3 | 4 |......| 9
+
+<unsigned_integer>::=<digit><digit>*
+
+<integer>::=(+|-|ε)<unsigned_integer>
+
+<numbers>::=<integer>(.<unsigned_integer>|ε)	
+
+<letter>::= a | b | c ..... | z | A  |B | C....... | Z 
+
+<char>::=<letter>|<digit>
+
+<chars>::=<char><char>*
+
+<string>::='<chars>'
+
+<id>::=(<letter>|_)((<char>|_)*|e)
+
+<operator>::= =|!=|>|<|>=|<=|AND|OR|NOT|IN
+
+<keywords>::=SELECT|FROM|WHERE|LIMIT|GROUP|ORDER|BY|CREATE|TABLE|<Type>
+
+<Type>::=INT|FLOAT|VARCHAR(<unsigned_integer>)
+
+<statements>:=<CREATE TABLE>|<SELECT>
+
+<CREATE TABLE>::=<id>(<lista_stilwn_pinaka>)(<lista_stilwn_pinaka>)*;
+
+<lista_stilwn_pinaka>::=<id><Type>
+
+<SELECT>
+
+
+
+
+
+
+
+
+
+    
+
