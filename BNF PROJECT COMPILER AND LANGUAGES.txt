@@ -1,4 +1,4 @@
-				B		N		F
+	B		N		F
 <digit>::= 0 | 1 | 2 | 3 | 4 |......| 9
 
 <unsigned_integer>::=<digit><digit>*
@@ -19,6 +19,8 @@
 
 <operator>::= =|!=|>|<|>=|<=|AND|OR|NOT|IN
 
+<value>::=<numbers>|<string>|<id>
+
 <keywords>::=SELECT|FROM|WHERE|LIMIT|GROUP|ORDER|BY|CREATE|TABLE|<Type>
 
 <Type>::=INT|FLOAT|VARCHAR(<unsigned_integer>)
@@ -29,9 +31,17 @@
 
 <lista_stilwn_pinaka>::=<id><Type>
 
-<SELECT> ioulia simou kavla
+<FROM>::=FROM <id>
 
+<WHERE>::=WHERE <condition>
 
+<expression>::=<id><operator><value>
+
+<condition>::=
+
+<GROUP_BY>::=
+
+<select>::=<lista_stilwn_pinaka><FROM><WHERE><GROUP_BY><ORDER_BY><LIMIT>
 
 
 
