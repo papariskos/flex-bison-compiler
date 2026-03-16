@@ -29,7 +29,8 @@
 
 <lista_stilwn_pinaka>::=<id><Type>
 
-<SELECT>
+<SELECT> ioulia simou kavla
+
 
 
 
