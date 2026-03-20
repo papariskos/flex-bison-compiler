@@ -29,7 +29,7 @@
 
 <statements>:=<CREATE TABLE>|<SELECT>
 
-<CREATE TABLE>::=<id>(<lista_stilwn_pinaka>)(,<lista_stilwn_pinaka>)*;
+<CREATE TABLE>::=CREATE TABLE <id>(<lista_stilwn_pinaka>)(,<lista_stilwn_pinaka>)*;
 
 <lista_stilwn_pinaka>::=<id><Type>
 
@@ -41,9 +41,10 @@ expression>::= <id> <operator> <value> | <id> (NOT|ε) IN (<value_list>)
 
 <condition>::= (NOT|ε) <expression> ((AND|OR) (NOT|ε) <expression>)*  
 
-<GROUP_BY>::=
+<GROUP_BY>::= 
 
-<select>::= SELECT <lista_stilwn_pinaka><FROM><WHERE><GROUP_BY><ORDER_BY><LIMIT>
+<select>::= SELECT <lista_stilwn_pinaka><FROM>(<WHERE> | ε) (<GROUP_BY> | ε) (<ORDER_BY> | ε ) (<LIMIT> | ε)
+
 
 
 
