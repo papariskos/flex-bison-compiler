@@ -21,6 +21,8 @@
 
 <value>::=<numbers>|<string>|<id>
 
+<value_list>::= <value> (',' <value>)*
+
 <keywords>::=SELECT|FROM|WHERE|LIMIT|GROUP|ORDER|BY|CREATE|TABLE|<Type>
 
 <Type>::=INT|FLOAT|VARCHAR(<unsigned_integer>)
@@ -37,7 +39,7 @@
 
 <expression>::=<id><operator><value>
 
-<condition>::= (NOT|ε) <expression> ((AND|OR) (NOT|ε) <expression>)*
+<condition>::= (NOT|ε) <expression> ((AND|OR) (NOT|ε) <expression>)*  
 
 <GROUP_BY>::=
 
