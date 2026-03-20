@@ -17,7 +17,7 @@
 
 <id>::=(<letter>|_)((<char>|_)*|e)
 
-<operator>::= =|!=|>|<|>=|<=|AND|OR|NOT|IN
+<operator>::= =|!=|>|<|>=|<=
 
 <value>::=<numbers>|<string>|<id>
 
