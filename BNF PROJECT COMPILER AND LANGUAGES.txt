@@ -17,7 +17,7 @@
 
 <string>::='<chars>'
 
-<id>::=(<letter>|_)((<char>|_)*|e)
+<id>::=(<letter>|_)((<char>|_)*|ε)
 
 <operator>::= =|!=|>|<|>=|<=
 
@@ -29,9 +29,9 @@
 
 <Type>::=INT|FLOAT|VARCHAR(<unsigned_integer>)
 
-<statements>:=<CREATE TABLE>|<SELECT>
+<statements>::=<CREATE TABLE>|<SELECT>
 
-<CREATE TABLE>::=CREATE TABLE <id>(<lista_stilwn_pinaka>)(,<lista_stilwn_pinaka>)*;
+<CREATE TABLE>::=CREATE TABLE <id>((<lista_stilwn_pinaka>)(,<lista_stilwn_pinaka>)*);
 
 <lista_stilwn_pinaka>::=<id><Type>
 
@@ -39,7 +39,7 @@
 
 <WHERE>::=WHERE <condition>
 
-expression>::= <id> <operator> <value> | <id> (NOT|ε) IN (<value_list>)
+<expression>::= <id> <operator> <value> | <id> (NOT|ε) IN (<value_list>)
 
 <condition>::= (NOT|ε) <expression> ((AND|OR) (NOT|ε) <expression>)*  
 
