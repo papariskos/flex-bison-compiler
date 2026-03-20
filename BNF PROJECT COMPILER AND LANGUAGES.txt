@@ -3,7 +3,7 @@
 
 <unsigned_integer>::=<digit><digit>*
 
-<integer> ::= '-' <unsigned_integer>
+<integer> ::= (+ | -) <unsigned_integer>
             | <unsigned_integer>
 
 
@@ -47,6 +47,7 @@ expression>::= <id> <operator> <value> | <id> (NOT|ε) IN (<value_list>)
 
 <select>::= SELECT <lista_stilwn_pinaka><FROM>(<WHERE> | ε) (<GROUP_BY> | ε) (<ORDER_BY> | ε ) (<LIMIT> | ε)
 
+<lista_stilwn_select> <id> (,<id>)*
 
 
 
