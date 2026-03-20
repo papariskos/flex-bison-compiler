@@ -41,7 +41,7 @@
 
 <GROUP_BY>::=
 
-<select>::=<lista_stilwn_pinaka><FROM><WHERE><GROUP_BY><ORDER_BY><LIMIT>
+<select>::= SELECT <lista_stilwn_pinaka><FROM><WHERE><GROUP_BY><ORDER_BY><LIMIT>
 
 
 
