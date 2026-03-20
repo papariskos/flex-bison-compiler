@@ -47,7 +47,7 @@ expression>::= <id> <operator> <value> | <id> (NOT|ε) IN (<value_list>)
 
 <ORDER_BY>::= ORDER BY <lista_stilwn>
 
-<LIMIT> ::= 
+<LIMIT> ::= LIMIT <unsigned_integer>
 
 <select>::= SELECT <lista_stilwn><FROM>(<WHERE> | ε) (<GROUP_BY> | ε) (<ORDER_BY> | ε ) (<LIMIT> | ε)
 
