@@ -37,7 +37,7 @@
 
 <WHERE>::=WHERE <condition>
 
-<expression>::=<id><operator><value>
+expression>::= <id> <operator> <value> | <id> (NOT|ε) IN (<value_list>)
 
 <condition>::= (NOT|ε) <expression> ((AND|OR) (NOT|ε) <expression>)*  
 
