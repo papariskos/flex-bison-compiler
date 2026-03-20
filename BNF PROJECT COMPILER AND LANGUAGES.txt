@@ -37,7 +37,7 @@
 
 <expression>::=<id><operator><value>
 
-<condition>::=
+<condition>::= (NOT|ε) <expression> ((AND|OR) (NOT|ε) <expression>)*
 
 <GROUP_BY>::=
 
