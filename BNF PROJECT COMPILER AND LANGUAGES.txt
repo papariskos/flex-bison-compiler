@@ -49,7 +49,7 @@
 
 <LIMIT> ::= LIMIT <unsigned_integer>
 
-<select>::= SELECT <lista_stilwn><FROM>(<WHERE> | ε) (<GROUP_BY> | ε) (<ORDER_BY> | ε ) (<LIMIT> | ε)
+<SELECT>::= SELECT (* | <lista_stilwn>) <FROM>(<WHERE> | ε) (<GROUP_BY> | ε) (<ORDER_BY> | ε ) (<LIMIT> | ε);
 
 <lista_stilwn>::=  <id> (,<id>)*
 
