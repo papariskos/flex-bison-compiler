@@ -21,7 +21,7 @@
 
 <value>::=<numbers>|<string>|<id>
 
-<value_list>::= <value> ((,) <value>)*
+<value_list>::= <value> (, <value>)*
 
 <keywords>::=SELECT|FROM|WHERE|LIMIT|GROUP|ORDER|BY|CREATE|TABLE|<Type>
 
