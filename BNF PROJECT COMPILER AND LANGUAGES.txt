@@ -45,9 +45,9 @@ expression>::= <id> <operator> <value> | <id> (NOT|ε) IN (<value_list>)
 
 <GROUP_BY>::= 
 
-<select>::= SELECT <lista_stilwn_pinaka><FROM>(<WHERE> | ε) (<GROUP_BY> | ε) (<ORDER_BY> | ε ) (<LIMIT> | ε)
+<select>::= SELECT <lista_stilwn_select><FROM>(<WHERE> | ε) (<GROUP_BY> | ε) (<ORDER_BY> | ε ) (<LIMIT> | ε)
 
-<lista_stilwn_select> <id> (,<id>)*
+<lista_stilwn_select>::=  <id> (,<id>)*
 
 
 
