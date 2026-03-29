@@ -3,7 +3,7 @@
 
 <unsigned_integer>::=<digit><digit>*
 
-<integer> ::= (+ | -) <unsigned_integer>
+<integer> ::= (+ | -|ε) <unsigned_integer>
             | <unsigned_integer>
 
 
