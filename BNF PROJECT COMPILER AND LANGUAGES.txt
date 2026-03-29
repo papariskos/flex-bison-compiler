@@ -3,7 +3,7 @@
 
 <unsigned_integer>::=<digit><digit>*
 
-<integer> ::= (+ | -|ε) <unsigned_integer>
+<integer> ::= (+ | -|) <unsigned_integer>
             | <unsigned_integer>
 
 
@@ -17,7 +17,7 @@
 
 <string>::='<chars>'
 
-<id>::=(<letter>|_)((<char>|_)*|ε)
+<id>::=(<letter>|_)((<char>|_)*)
 
 <operator>::= =|!=|>|<|>=|<=
 
